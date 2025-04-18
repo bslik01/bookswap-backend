@@ -10,7 +10,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: '20' }
       - run: npm install
-      - run: npm test
+      - run: npm run test
         env:
           DB_URL: mongodb://localhost:27017/test
           JWT_SECRET: test-secret
